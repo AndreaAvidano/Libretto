@@ -5,9 +5,11 @@ import java.util.*;
 public class LibrettoModel {
 
 	private List<Esame> listaEsami;
+	private int media;
 	
 	public LibrettoModel() {
 		this.listaEsami = new LinkedList<Esame>();
+		this.media = 0;
 	}
 	
 	/* a differenza di Lamberti aggiungo direttamente l'esame, quindi dovrò definirlo nella classe Controller
