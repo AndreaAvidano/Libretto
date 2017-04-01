@@ -88,12 +88,18 @@ public class LibrettoController {
     	String titolo = txtTitolo.getText();
     	String docente = txtDocente.getText();
     	
+    	txtCodice.clear();
+		txtTitolo.clear();
+		txtDocente.clear();
+    	
     	// validità dati
     	
     	if(codice.length()<5 || titolo.length()==0 || docente.length()==0){
     		// lo dico all'utente
     		
     		txtMessage.appendText("Dati esame insufficienti\n");
+    		
+    		
     		
     		// e mi rifiuto di andare avanti
     		
